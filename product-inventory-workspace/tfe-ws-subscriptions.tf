@@ -1,4 +1,4 @@
-module "svc-ws-service-meta-data" {
+module "svc-ws-subscriptions" {
   # Module import info here
   source  = "../svc-inventory-workspace-module"
 
