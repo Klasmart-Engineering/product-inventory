@@ -9,9 +9,9 @@ locals {
 }
 
 locals {
-  readme_kidskube_meta = <<EOT
-KidsKube Service meta layer resources.
+  readme = <<EOT
+Products inventory layer resources.
 This module includes the following:
-- Terraform Cloud (TFC) workspaces for (micro) services
+- Terraform Cloud (TFC) workspaces for modular designed products
 EOT
 }
