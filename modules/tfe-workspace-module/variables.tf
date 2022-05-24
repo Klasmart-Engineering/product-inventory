@@ -23,7 +23,7 @@ variable "terraform_version" {
   default     = "1.1.7"
 }
 
-variable "service_meta_repo" {
+variable "vcs_repo" {
   description = "The repo containing the meta configuration for a service"
   type        = string
 }
@@ -86,4 +86,14 @@ variable "notify_url" {
   description = "Webhook URL to send the notification to."
   type        = string
   default     = "https://hooks.slack.com/services/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"
+}
+
+variable "readme" {
+  description = "Readme description for the new workspace"
+  type = string
+  default = <<EOT
+Products inventory layer resources.
+This module includes the following:
+- Terraform Cloud (TFC) workspaces for modular designed products
+EOT
 }

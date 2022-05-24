@@ -9,9 +9,5 @@ locals {
 }
 
 locals {
-  readme = <<EOT
-Products inventory layer resources.
-This module includes the following:
-- Terraform Cloud (TFC) workspaces for modular designed products
-EOT
+  readme = var.readme
 }

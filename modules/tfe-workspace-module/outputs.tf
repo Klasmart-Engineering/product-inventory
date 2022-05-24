@@ -1,6 +1,6 @@
 output "tfe_workspace_service_meta_id" {
   description = "ID of the meta tfe workspace"
-  value       = tfe_workspace.service-meta.id
+  value       = tfe_workspace.workspace.id
 }
 
 output "service_owner" {
