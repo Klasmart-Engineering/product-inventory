@@ -2,7 +2,7 @@ locals {
   tfe_organization = "kidsloop-infrastructure"
 
   # Workspace ID of the main "product-inventory" workspace
-  service_meta_index_workspace_id = ""
+  service_meta_index_workspace_id = "ws-Mc42xiAFAnKokkAq"
 
   # RBAC settings
   tfe_team_access_permissions = {
