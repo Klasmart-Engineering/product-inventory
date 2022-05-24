@@ -1,6 +1,6 @@
 module "svc-ws-subscriptions" {
   # Module import info here
-  source  = "../modules/svc-inventory-workspace-module"
+  source  = "./modules/svc-inventory-workspace-module"
 
   # Module inputs here
   service_owner       = "Infra"
