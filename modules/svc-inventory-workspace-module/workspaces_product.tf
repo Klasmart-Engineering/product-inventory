@@ -11,7 +11,7 @@ resource "tfe_workspace" "product-common-infra" {
   ssh_key_id         = data.tfe_ssh_key.deploy.id
   working_directory  = local.working_directory
   vcs_repo {
-    identifier   = var.service_meta_repo
+    identifier   = var.product_common_infra_repo
     branch       = "main"
     ingress_submodules = false
     oauth_token_id     = var.vcs_oauth_token_id
