@@ -1,6 +1,6 @@
 module "svc-ws-subscriptions" {
   # Module import info here
-  source  = "./modules/tfe-workspace-module"
+  source  = "git@github.com:KL-Infrastructure/terraform-tfe-ws-base.git?ref=v0.1.0"
 
   # Module inputs here
   service_owner       = "Infra"
