@@ -5,6 +5,7 @@ resource "tfe_variable_set" "tfe-ws-token-service" {
   workspace_ids = [
     local.service_meta_index_workspace_id,
     module.svc-ws-subscriptions.tfe_workspace_id,
+    module.svc-ws-products-core.tfe_workspace_id,
   ]
 }
 
@@ -14,5 +15,6 @@ resource "tfe_variable_set" "github_access_token" {
   organization = local.tfe_organization
   workspace_ids = [
     module.svc-ws-subscriptions.tfe_workspace_id,
+    module.svc-ws-products-core.tfe_workspace_id,
   ]
 }
